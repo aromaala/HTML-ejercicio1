@@ -1,0 +1,419 @@
+<!--
+
+• Declararse como HTML5.
+• Indicar que el idioma de la página es español.
+• Utilizar codificación UTF-8.
+• Incluir la configuración viewport adecuada para dispositivos móviles.
+• Tener como título de la pestaña: Kiosko Maldonado | Prensa de ayer
+
+-->
+
+<!-- hola -->
+
+<!DOCTYPE html>     <!-- Declaramos HTML5 -->
+<html lang="es">        <!-- Indicar que el idioma de la página es español. -->
+
+<head>
+    <meta charset="UTF-8">      <!-- Utilizar codificación UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- Incluir la configuración viewport adecuada para dispositivos móviles. -->
+    <title>Kiosko Maldonado</title>     <!-- hola -->
+</head>
+
+<body>
+
+<header>Kiosko Maldonado | Prensa de ayer</header>      <!-- Tener como título de la pestaña: -->
+
+<h1>Kiosko Maldonado</h1>       <!-- La página debe comenzar mostrando el nombre: -->
+<h2>No tiene nada de malo vivir en el pasado</h2>       <!-- Debajo deberá aparecer el eslogan: -->
+<p>presentar el negocio</p>     <!-- hola -->
+<p>el Kiosko Maldonado está especializado en vender noticias cuando ya han dejado de ser noticia</p>        <!-- hola -->
+<h2></h2>
+
+<img src="kiosko.png"
+        alt="Kiosko Maldonado"
+        width="800"
+        height="533"
+        title="Kiosko Maldonado"
+        loading="lazy">     <!-- Incluye una imagen representativa del negocio. -->
+
+
+<!-- Seccion 1 ¿Por qué comprar el periódico de ayer? -->
+
+<section id="Seccion1">     <!-- hola -->
+    <h2>¿Por qué comprar el periódico de ayer?</h2>     <!-- Crea un nuevo apartado con ese título. -->
+    <ul>        <!-- lista no ordenada con al menos cinco ventajas -->
+        <li>Ventaja 1:</li>
+        <li>Ventaja 1:</li>
+        <li>Ventaja 1:</li>
+        <li>Ventaja 1:</li>
+        <li>Ventaja 1: (con enlace) <a href="https://www.google.es">Google</a> </li>        <!-- uno de los elementos de la lista debe aparecer también un enlace -->
+    </ul>
+</section>
+
+
+<!-- Seccion 2 Periódicos disponibles -->
+
+<section id="Seccion1">     <!-- que aparezcan al menos seis periódicos diferentes. -->
+    <ol>        <!-- Organízalos mediante una lista. -->
+        <!-- Cada periódico debe incluir como mínimo su nombre. -->
+        <!-- Algunos de ellos pueden incluir enlaces a sus respectivas páginas web. -->
+        <li>periódico 1</li>
+        <li>periódico 1</li>
+        <li>periódico 1</li>
+        <li>periódico 1</li>
+        <li>periódico 1</li>
+        <li>periódico 1</li>
+    </ol>
+</section>
+
+<!-- Los enlaces externos deberán abrirse en una nueva pestaña y utilizar los atributos de seguridad correspondientes vistos en clase. -->
+
+
+<!-- Tabla «Prensa disponible ayer» -->
+
+<table>
+
+    <caption>Prensa disponible ayer</caption>
+
+    <thead>
+        <tr>        <!-- Fila 1 (Encabezados)-->
+            <th scope="col">Periódico</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Unidades</th>
+            <th scope="col">Acción</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>        <!-- Fila 2 (Periodico 1)-->
+            <td>El Diario Matutino</td>
+            <td>Ayer</td>
+            <td>General</td>
+            <td>1,50 €</td>
+            <td>8</td>
+            <td>Comprar</td>
+        </tr>
+
+        <tr>        <!-- Fila 3 (Periodico 2)-->
+            <td>Economía Pasada</td>
+            <td>Ayer</td>
+            <td>Economía</td>
+            <td>1,80 €</td>
+            <td>4</td>
+            <td>Comprar</td>
+        </tr>
+
+        <tr>        <!-- Fila 4 (Periodico 3)-->
+            <td>Deportes de Ayer</td>
+            <td>Ayer</td>
+            <td>Deportes</td>
+            <td>1,20 €</td>
+            <td>12</td>
+            <td>Comprar</td>
+        </tr>
+
+        <tr>        <!-- Fila 5 (Periodico 4)-->
+            <td>La Gaceta Tardía</td>
+            <td>Ayer</td>
+            <td>General</td>
+            <td>1,40 €</td>
+            <td>6</td>
+            <td>Comprar</td>
+        </tr>
+
+        <tr>        <!-- Fila 6 (Periodico 5)-->
+            <td>Noticias que ya Sabías</td>
+            <td>Ayer</td>
+            <td>Actualidad</td>
+            <td>1,60 €</td>
+            <td>3</td>
+            <td>Comprar</td>
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="5">Todos nuestros periódicos tienen un mínimo de 24 horas de antigüedad garantizada.</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+
+<br> <br><!-- Salto de línea con fines estéticos -->
+
+
+<!-- Formulario -->
+
+<form action="">
+
+    <fieldset>
+        <legend>Datos del cliente</legend>      <!-- Formulario que recoge los datos del cliente -->
+
+        <label for="nombre"> Nombre y apellidos:</label>        <!-- Nombre y apellidos -->
+        <input type="text" id="nombre" name="nombre" required> <br> <br>
+
+        <label for="email">Email</label>        <!-- Email -->
+        <input type="email" id="email" name="email" required> <br> <br>
+
+        <label for="tlf">Teléfono:</label>      <!-- Teléfono -->
+        <input type="tel" id="tlf" name="tlf"> <br> <br>
+
+        <label for="date">Fecha de nacimiento:</label>      <!-- Fecha de nacimiento -->
+        <input type="date" id="date" name="date"> <br> <br>
+
+        <label for="pass">Contraseña:</label>       <!-- Contraseña -->
+        <input type="text" name="pass" id="pass" minlength="8"> <br> <br>
+
+    </fieldset>
+
+
+    <br> <br><!-- Salto de línea con fines estéticos -->
+
+
+    <!-- Datos del pedido -->
+
+    <fieldset>
+
+        <legend>Datos del pedido</legend>
+
+        <label for="dateRecogida">Fecha de la recogida:</label>
+        <input type="date" name="dateRecogida" id="dateRecogida"><br><br>
+
+        <label for="horaRecogida">Hora de la recogida:</label>
+        <input type="time" name="horaRecogida" id="horaRecogida"><br><br>
+
+        <label for="numEjemplares">Número de ejemplares:</label>
+        <input type="number" name="numEjemplares" id="numEjemplares" min="1" max="10"><br><br>
+
+        <label for="prisa">Nivel de urgencia:</label> <br><br>
+
+        <span>Sin ninguna prisa</span>
+
+        <input type="range"
+        name="prisa"
+        id="prisa"
+        value="50"
+        min="0"
+        max="100">
+
+        <span>Lo quiero ya</span>
+        <br>
+
+        <output for="urgencia">50</output>     <!-- No funciona -->
+
+    </fieldset>
+
+
+    <br> <br><!-- Salto de línea con fines estéticos -->
+
+
+    <!-- Tipo de periódico -->
+
+    <fieldset>
+
+        <legend>Tipo de periódico</legend>
+
+        <input type="radio" name="tipoPeriodico" id="General">
+        <label for="">General</label>
+
+        <input type="radio" name="tipoPeriodico" id="Economia">
+        <label for="">Economía</label>
+
+        <input type="radio" name="tipoPeriodico" id="Deportes">
+        <label for="">Deportes</label>
+
+        <input type="radio" name="tipoPeriodico" id="Cultura">
+        <label for="">Cultura</label>
+
+        <input type="radio" name="tipoPeriodico" id="Tecnologia">
+        <label for="">Tecnología</label>
+
+    </fieldset>
+
+
+    <br> <br><!-- Salto de línea con fines estéticos -->
+
+
+    <!-- Extras del pedido -->
+
+    <fieldset>
+
+        <legend>Extras del pedido</legend>
+
+        <label for="bolsa">Bolsa de papel</label>
+
+        <select name="bolsa" id="bolsa">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="varios">Varios</option>
+        </select>
+
+        <br><br><!-- Salto de línea con fines estéticos -->
+
+
+        <label for="crucigrama">Crucigrama de ayer</label>
+
+        <select name="crucigrama" id="crucigrama">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="varios">Varios</option>
+        </select>
+
+        <br><br><!-- Salto de línea con fines estéticos -->
+
+
+        <label for="suplemento">Suplemento dominical atrasado</label>
+
+        <select name="suplemento" id="suplemento">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="varios">Varios</option>
+        </select>
+
+        <br><br><!-- Salto de línea con fines estéticos -->
+
+
+        <label for="bolígrafo">Bolígrafo del Kiosko Maldonado</label>
+
+        <select name="bolígrafo" id="bolígrafo">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="varios">Varios</option>
+        </select>
+
+        <br><br><!-- Salto de línea con fines estéticos -->
+
+    </fieldset>
+
+
+    <br> <br><!-- Salto de línea con fines estéticos -->
+
+
+    <!-- Selección del periódico -->
+
+    <fieldset>
+
+        <legend>Selección de periódico</legend>
+
+        <label for="periodico">Periódico:</label>
+
+        <select name="periodico" id="periodico">
+
+            <optgroup label="PRENSA GENERAL">
+
+                <option value="El Diario Matutino">El Diario Matutino</option>
+                <option value="La Gaceta Tardía">La Gaceta Tardía</option>
+                <option value="Noticias que ya Sabías">Noticias que ya Sabías</option>
+
+            </optgroup>
+
+
+            <optgroup label="PRENSA ESPECIALIZADA">
+
+                <option value="Economía Pasada">Economía Pasada</option>
+                <option value="Deportes de Ayer">Deportes de Ayer</option>
+                <option value="Tecnología de Anteayer">Tecnología de Anteayer</option>
+
+            </optgroup>
+
+        </select>
+
+        <br>
+        <button type="submit">Enviar</button>
+
+    </fieldset>
+
+
+    <br> <br><!-- Salto de línea con fines estéticos -->
+
+
+    <!-- Pack de periódicos -->
+
+    <fieldset>
+
+        <legend>Pack nostálgico</legend>
+
+        <label for="periodico">Periódicos:</label>
+
+        <br>
+
+        <select name="periodico" id="periodico" multiple size="4">
+
+            <option value="El Diario Matutino">El Diario Matutino</option>
+            <option value="La Gaceta Tardía">La Gaceta Tardía</option>
+            <option value="Noticias que ya Sabías">Noticias que ya Sabías</option>
+
+            <option value="Economía Pasada">Economía Pasada</option>
+            <option value="Deportes de Ayer">Deportes de Ayer</option>
+            <option value="Tecnología de Anteayer">Tecnología de Anteayer</option>
+
+        </select>
+
+    </fieldset>
+
+
+    <br> <br><!-- Salto de línea con fines estéticos -->
+
+
+    <!-- Observaciones -->
+
+    <fieldset>
+
+        <legend>Instrucciones para el kiosquero</legend>
+
+        <textarea name="observaciones" id="observaciones" rows="5" cols="70" maxlength="500">
+
+        </textarea>
+
+    </fieldset>
+
+
+    <br> <br><!-- Salto de línea con fines estéticos -->
+
+
+    <!-- Adjuntar documentación -->
+
+    <fieldset>
+
+        <legend>Adjuntar documentación</legend>
+
+        <input type="file" name="file" id="file" accept=".pdf" accept=".png" accept=".jpg">
+
+    </fieldset>
+
+
+    <br> <br><!-- Salto de línea con fines estéticos -->
+
+
+    <!-- Progreso del pedido -->
+
+    <legend>Progreso del pedido</legend>
+
+    <progress value="40" max="100">40%</progress>
+
+
+    <br> <br><!-- Salto de línea con fines estéticos -->
+
+
+    <!-- Botones finales -->
+    
+    <legend>Envío de formulario</legend>
+    <br><!-- Salto de línea con fines estéticos -->
+    <button type="submit">Realizar pedido</button>      <!-- Envia el formulario -->
+
+    <button type="reset">Limpiar formulario</button>        <!-- Limpia el formulario -->
+
+    <button type="button">Calcular precio</button>      <!-- Calcula el precio -->
+
+
+</form>
+
+
+</body>
+
+</html>
